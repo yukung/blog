@@ -1,0 +1,15 @@
+{
+  "name": "ghost-on-cloudfoundry",
+  "version": "1.19.0",
+  "description": "Simple and Open blogging platform on Cloud Foundry.",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": "git@github.com:yukung/ghost-on-cloudfoundry.git",
+  "author": "yukung <yukung.i@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "ghost": "1.19.0"
+  }
+}
