@@ -10,6 +10,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "cfenv": "^1.0.4",
     "ghost": "1.19.0"
   }
 }

@@ -1,0 +1,12 @@
+---
+applications:
+  - name: ghost
+    buildpack: nodejs_buildpack
+    command: npm start
+    instances: 1
+    memory: 256MB
+    services:
+      - blog-db
+      - blog-mail
+    env:
+      NODE_ENV: production
