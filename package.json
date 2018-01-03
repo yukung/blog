@@ -9,6 +9,9 @@
   "author": "yukung <yukung.i@gmail.com>",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": "6.12.x"
+  },
   "dependencies": {
     "casper": "github:TryGhost/Casper#2.1.7",
     "cfenv": "^1.0.4",
