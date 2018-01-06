@@ -1,5 +1,7 @@
+# Definitions added manually
+.envrc
 
-# Created by https://www.gitignore.io/api/node,database,visualstudiocode
+# Created by https://www.gitignore.io/api/node,database,terraform,visualstudiocode
 
 ### Database ###
 *.accdb
@@ -71,6 +73,16 @@ typings/
 .env
 
 
+### Terraform ###
+# Compiled files
+*.tfstate
+*.tfstate.backup
+
+# Module directory
+.terraform/
+
+### Terraform Patch ###
+*.tfvars
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -79,4 +91,4 @@ typings/
 !.vscode/extensions.json
 .history
 
-# End of https://www.gitignore.io/api/node,database,visualstudiocode
+# End of https://www.gitignore.io/api/node,database,terraform,visualstudiocode
