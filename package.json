@@ -16,6 +16,7 @@
     "casper": "github:TryGhost/Casper#2.1.7",
     "cfenv": "^1.0.4",
     "ghost": "1.19.0",
-    "ghost-storage-adapter-s3": "^2.3.0"
+    "ghost-storage-adapter-s3": "^2.3.0",
+    "raven": "^2.3.0"
   }
 }
