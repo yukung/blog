@@ -17,6 +17,6 @@
     "transports": ["stdout", "file"]
   },
   "paths": {
-    "contentPath": "content/"
+    "contentPath": "content"
   }
 }
