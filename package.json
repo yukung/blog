@@ -1,6 +1,6 @@
 {
   "name": "ghost-on-cloudfoundry",
-  "version": "1.19.0",
+  "version": "1.22.8",
   "description": "Simple and Open blogging platform on Cloud Foundry.",
   "scripts": {
     "start": "node index"
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "cfenv": "^1.0.4",
-    "ghost": "1.19.0",
+    "ghost": "1.22.8",
     "ghost-storage-adapter-s3": "^2.3.0",
     "raven": "^2.3.0"
   }
