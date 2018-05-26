@@ -1,0 +1,12 @@
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+<header class="site-header">
+    <div class="site-header-content">
+        <div class="site-header-picture">
+            {{#if @blog.logo}}<a class="site-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"/></a>{{/if}}
+        </div>
+        <div class="site-header-text">
+            <a href="{{@blog.url}}"><h1 class="site-title">{{@blog.title}}</h1></a>
+            <h2 class="site-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+</header>
