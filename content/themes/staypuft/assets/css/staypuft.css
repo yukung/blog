@@ -12,7 +12,7 @@
 /* Variables
 /* ---------------------------------------------------------- */
 :root {
-    --sans-serif: 'Open Sans', sans-serif;
+    --sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", 游ゴシック体, 'Yu Gothic', YuGothic, Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
     --text-color: #3c484e;
     --link-color: #273c75;
     --link-hover-color: #00a8ff;
