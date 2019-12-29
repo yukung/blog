@@ -1,5 +1,6 @@
 # Definitions added manually
 .envrc
+contents/adapters/*
 
 # Created by https://www.gitignore.io/api/node,database,terraform,visualstudiocode
 
