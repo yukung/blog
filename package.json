@@ -10,7 +10,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=6.x <10.x"
+    "node": "^8.10.0 || ^10.13.0"
   },
   "dependencies": {
     "cfenv": "^1.2.2",
