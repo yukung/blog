@@ -10,12 +10,12 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=6.x <10.x"
+    "node": "^8.10.0 || ^10.13.0"
   },
   "dependencies": {
     "cfenv": "^1.2.2",
-    "ghost": "1.26.2",
-    "ghost-storage-adapter-s3": "^2.3.0",
-    "raven": "^2.3.0"
+    "ghost": "2.37.2",
+    "ghost-storage-adapter-s3": "^2.8.0",
+    "raven": "^2.6.0"
   }
 }
