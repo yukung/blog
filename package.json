@@ -15,7 +15,7 @@
   "dependencies": {
     "cfenv": "^1.2.2",
     "ghost": "2.37.2",
-    "ghost-storage-adapter-s3": "^2.3.0",
-    "raven": "^2.3.0"
+    "ghost-storage-adapter-s3": "^2.8.0",
+    "raven": "^2.6.0"
   }
 }
