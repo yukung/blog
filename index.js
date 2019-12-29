@@ -2,7 +2,7 @@ var ghost = require('ghost');
 var path = require('path');
 var express = require('express');
 var parentApp = express();
-var utils = require('./node_modules/ghost/core/server/services/url/utils');
+var urlService = require('./node_modules/ghost/core/frontend/services/url');
 var Raven = require('raven');
 
 var sentryDsn = process.env.SENTRY_DSN;
@@ -18,6 +18,6 @@ ghost().then(function (ghostServer) {
             res.end(res.sentry + '\n');
         });
     }
-    parentApp.use(utils.getSubdir(), ghostServer.rootApp);
+    parentApp.use(urlService.utils.getSubdir(), ghostServer.rootApp);
     ghostServer.start(parentApp);
 });
