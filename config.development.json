@@ -19,6 +19,11 @@
       "stdout"
     ]
   },
+  "storage": {
+    "active": "gcs",
+    "gcs": {
+    }
+  },
   "process": "systemd",
   "paths": {
     "contentPath": "/var/lib/ghost/content"
