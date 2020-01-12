@@ -8,7 +8,9 @@ variable "domain_name" {
   type = "string"
 }
 
-provider "aws" {}
+provider "aws" {
+  version = "~> 2.44.0"
+}
 
 resource "aws_s3_bucket" "blog_images" {
   bucket = "images.${var.domain_name}"
