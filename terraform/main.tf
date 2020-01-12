@@ -36,7 +36,7 @@ resource "aws_cloudfront_distribution" "images_distribution" {
     allowed_methods = ["GET", "HEAD"]
     cached_methods  = ["GET", "HEAD"]
 
-    forwarded_values = {
+    forwarded_values {
       cookies {
         forward = "none"
       }
