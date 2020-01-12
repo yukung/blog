@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  ghost:
+    build: ghost
+    restart: always
+    ports:
+      - "127.0.0.1:2368:2368"
+    env_file:
+      - .env
+    volumes:
+      - ./content:/var/lib/ghost/content
+    logging:
+      driver: gcplogs
