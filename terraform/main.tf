@@ -12,6 +12,10 @@ provider "aws" {
   version = "~> 2.44.0"
 }
 
+provider "google" {
+  version = "~> 3.4.0"
+}
+
 resource "aws_s3_bucket" "blog_images" {
   bucket = "images.${var.domain_name}"
   policy = "${data.aws_iam_policy_document.s3_policy.json}"
