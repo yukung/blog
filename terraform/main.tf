@@ -35,6 +35,12 @@ resource "google_storage_bucket_iam_binding" "blog_executor_bucket_policy_bindin
   ]
 }
 
+resource "google_storage_bucket_iam_member" "blog_viewer" {
+  bucket = "${google_storage_bucket.blog_images.name}"
+  role = "roles/storage.legacyObjectReader"
+  member = "allUsers"
+}
+
 resource "google_service_account" "blog_executor" {
   account_id = "blog-executor"
   display_name = "Blog Service Account"
