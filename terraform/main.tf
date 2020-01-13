@@ -1,6 +1,6 @@
 terraform {
-  backend "s3" {
-    key = "terraform/terraform.tfstate"
+  backend "gcs" {
+    prefix = "terraform/terraform.tfstate"
   }
 }
 
