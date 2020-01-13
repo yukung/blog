@@ -5,7 +5,7 @@ terraform {
 }
 
 variable "domain_name" {
-  type = "string"
+  type = string
 }
 
 provider "google" {
@@ -19,7 +19,7 @@ resource "google_storage_bucket" "blog_images" {
 }
 
 resource "google_storage_bucket_iam_binding" "blog_executor_bucket_policy_binding" {
-  bucket = "${google_storage_bucket.blog_images.name}"
+  bucket = google_storage_bucket.blog_images.name
   role = "roles/storage.legacyBucketWriter"
   members = [
     "serviceAccount:${google_service_account.blog_executor.email}"
@@ -27,7 +27,7 @@ resource "google_storage_bucket_iam_binding" "blog_executor_bucket_policy_bindin
 }
 
 resource "google_storage_bucket_iam_member" "blog_viewer" {
-  bucket = "${google_storage_bucket.blog_images.name}"
+  bucket = google_storage_bucket.blog_images.name
   role = "roles/storage.legacyObjectReader"
   member = "allUsers"
 }
