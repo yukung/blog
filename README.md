@@ -1,5 +1,4 @@
-Ghost on Cloud Foundry
+blog
 ======================
 
-This repository installs an open source blogging engine [Ghost](http://ghost.org), on Cloud Foundry.
-
+This repository is a personal blog management project that uses the open source blog engine Ghost.
