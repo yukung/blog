@@ -8,10 +8,6 @@ variable "domain_name" {
   type = "string"
 }
 
-provider "aws" {
-  version = "~> 2.44.0"
-}
-
 provider "google" {
   version = "~> 3.4.0"
 }
