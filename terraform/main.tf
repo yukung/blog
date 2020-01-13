@@ -21,6 +21,25 @@ resource "aws_s3_bucket" "blog_images" {
   policy = "${data.aws_iam_policy_document.s3_policy.json}"
 }
 
+resource "google_storage_bucket" "blog_images" {
+  name = "images.${var.domain_name}"
+  location = "US-WEST1"
+  storage_class = "REGIONAL"
+}
+
+resource "google_storage_bucket_iam_binding" "blog_executor_bucket_policy_binding" {
+  bucket = "${google_storage_bucket.blog_images.name}"
+  role = "roles/storage.legacyBucketWriter"
+  members = [
+    "serviceAccount:${google_service_account.blog_executor.email}"
+  ]
+}
+
+resource "google_service_account" "blog_executor" {
+  account_id = "blog-executor"
+  display_name = "Blog Service Account"
+}
+
 resource "aws_cloudfront_distribution" "images_distribution" {
   origin {
     domain_name = "${aws_s3_bucket.blog_images.bucket_domain_name}"
