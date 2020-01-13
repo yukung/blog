@@ -9,5 +9,6 @@ services:
       - .env
     volumes:
       - ./content:/var/lib/ghost/content
+      - ./your_service_account_key.json:/var/lib/ghost/your_service_account_key.json
     logging:
       driver: gcplogs
